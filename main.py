@@ -11,11 +11,8 @@ server = Flask(__name__)
 
 
 #КОД ТЕЛЕБОТА
-!pip install pyTelegramBotAPI 
 
 import telebot # импортируем библиотеку для создания бота
- 
-bot = telebot.TeleBot('5178549233:AAFzGJ_ilc5yFKMwvRmZYerFeoYOWsQ_KEg')
  
 name = ''
 surname = ''
@@ -47,7 +44,7 @@ def get_age(message):
     bot.send_message(message.from_user.id, 'Тебе '+str(age)+' лет, тебя зовут '+name+' '+surname+'?')
  
 # запуск
-bot.polling(none_stop=True)
+
 
 
 
@@ -62,7 +59,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://<qweyuuiu>.herokuapp.com/' + TOKEN)
+    bot.set_webhook(url='https://qweyuuiu.herokuapp.com/' + TOKEN)
     return "!", 200
 
 if __name__ == "__main__":
