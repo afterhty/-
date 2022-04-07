@@ -5,14 +5,14 @@ from telebot import types
 
 import telebot
 
-TOKEN = ''5178549233:AAFzGJ_ilc5yFKMwvRmZYerFeoYOWsQ_KEg'
+TOKEN = '5178549233:AAFzGJ_ilc5yFKMwvRmZYerFeoYOWsQ_KEg'
 bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
 
 
 #КОД ТЕЛЕБОТА
 
-import telebot # импортируем библиотеку для создания бота
+
  
 name = ''
 surname = ''
